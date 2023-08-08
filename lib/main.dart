@@ -14,9 +14,7 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      designSize: Size(375, 812),
-      builder: () => MaterialApp(
+    return  MaterialApp(
         debugShowCheckedModeBanner: false,
         title: "Flutter Laundry UI",
         theme: ThemeData(
@@ -26,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         initialRoute: "/",
         onGenerateRoute: _onGenerateRoute,
-      ),
+      
     );
   }
 }
